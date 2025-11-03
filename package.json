@@ -2,12 +2,23 @@
   "name": "adib",
   "version": "1.0.0",
   "description": "This is my first package",
-  "main": "server.js",
+  "main": "request.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node color.js",
+    "dev": "nodemon command_line_input.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonadib/NodeJs-2025"
   },
   "author": "Adib",
-  "license": "ISC"
- 
+  "license": "ISC",
+  "dependencies": {
+    "color": "^5.0.2",
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
