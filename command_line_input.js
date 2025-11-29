@@ -1,8 +1,10 @@
+const {console} =require("console");
 const http =require("http");
-const arg =process.argv;
-const port=arg[];
+const port =process.env.port || 3000;
+ç
 
 http.createServer((req,res)=>{
+    console.log(req.url);
     res.write("Hello World. My name is Adib\n");
     res.end("hello from command_line_input.js");
 }).listen(port);

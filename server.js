@@ -7,7 +7,7 @@ http.createServer((req , res) =>{
 
  http.createServer((req , res) =>{
     res.write("This is server 2\n");
-    res.end("hello from server 2"); // we have to end the response
+    res.end(); // we have to end the response
 }).listen(4900)
 
 console.log("Server is running on port 4800 and 4900");
